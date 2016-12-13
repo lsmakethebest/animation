@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "LSWaveView.h"
 
+
+
 @interface ViewController ()
 
 @property (nonatomic,weak) LSWaveView *wave;
@@ -37,6 +39,7 @@
     };
     [wave startWaveAnimation];
 
+  
     
 }
 

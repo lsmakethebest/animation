@@ -18,6 +18,9 @@
 		28637FF31DFA9FD3008050CD /* RootVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28637FF21DFA9FD3008050CD /* RootVCViewController.m */; };
 		286380391DFAC24E008050CD /* LSLoadingCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 286380381DFAC24E008050CD /* LSLoadingCircle.m */; };
 		2863803D1DFAC253008050CD /* LSWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2863803C1DFAC253008050CD /* LSWaveView.m */; };
+		286380E51DFFF3EB008050CD /* LSGraintCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 286380DF1DFFF3EB008050CD /* LSGraintCircleLayer.m */; };
+		286380E61DFFF3EB008050CD /* LSGraintCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 286380E11DFFF3EB008050CD /* LSGraintCircleView.m */; };
+		286380E71DFFF3EB008050CD /* LSDashLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 286380E41DFFF3EB008050CD /* LSDashLineLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,12 @@
 		286380381DFAC24E008050CD /* LSLoadingCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLoadingCircle.m; sourceTree = "<group>"; };
 		2863803B1DFAC253008050CD /* LSWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSWaveView.h; sourceTree = "<group>"; };
 		2863803C1DFAC253008050CD /* LSWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSWaveView.m; sourceTree = "<group>"; };
+		286380DE1DFFF3EB008050CD /* LSGraintCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSGraintCircleLayer.h; sourceTree = "<group>"; };
+		286380DF1DFFF3EB008050CD /* LSGraintCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSGraintCircleLayer.m; sourceTree = "<group>"; };
+		286380E01DFFF3EB008050CD /* LSGraintCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSGraintCircleView.h; sourceTree = "<group>"; };
+		286380E11DFFF3EB008050CD /* LSGraintCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSGraintCircleView.m; sourceTree = "<group>"; };
+		286380E31DFFF3EB008050CD /* LSDashLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDashLineLayer.h; sourceTree = "<group>"; };
+		286380E41DFFF3EB008050CD /* LSDashLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDashLineLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,8 @@
 		28637FB61DF92F42008050CD /* 动画 */ = {
 			isa = PBXGroup;
 			children = (
+				286380DD1DFFF3EB008050CD /* 渐变色圆 */,
+				286380E21DFFF3EB008050CD /* 虚线 */,
 				2863803A1DFAC253008050CD /* LSWaveView */,
 				286380361DFAC24E008050CD /* LSLoadingCircle */,
 				28637FBA1DF92F42008050CD /* AppDelegate.h */,
@@ -169,6 +180,26 @@
 				2863803C1DFAC253008050CD /* LSWaveView.m */,
 			);
 			path = LSWaveView;
+			sourceTree = "<group>";
+		};
+		286380DD1DFFF3EB008050CD /* 渐变色圆 */ = {
+			isa = PBXGroup;
+			children = (
+				286380DE1DFFF3EB008050CD /* LSGraintCircleLayer.h */,
+				286380DF1DFFF3EB008050CD /* LSGraintCircleLayer.m */,
+				286380E01DFFF3EB008050CD /* LSGraintCircleView.h */,
+				286380E11DFFF3EB008050CD /* LSGraintCircleView.m */,
+			);
+			path = "渐变色圆";
+			sourceTree = "<group>";
+		};
+		286380E21DFFF3EB008050CD /* 虚线 */ = {
+			isa = PBXGroup;
+			children = (
+				286380E31DFFF3EB008050CD /* LSDashLineLayer.h */,
+				286380E41DFFF3EB008050CD /* LSDashLineLayer.m */,
+			);
+			path = "虚线";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +338,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286380E71DFFF3EB008050CD /* LSDashLineLayer.m in Sources */,
+				286380E51DFFF3EB008050CD /* LSGraintCircleLayer.m in Sources */,
 				28637FBF1DF92F42008050CD /* ViewController.m in Sources */,
 				28637FF31DFA9FD3008050CD /* RootVCViewController.m in Sources */,
 				286380391DFAC24E008050CD /* LSLoadingCircle.m in Sources */,
+				286380E61DFFF3EB008050CD /* LSGraintCircleView.m in Sources */,
 				2863803D1DFAC253008050CD /* LSWaveView.m in Sources */,
 				28637FBC1DF92F42008050CD /* AppDelegate.m in Sources */,
 				28637FB91DF92F42008050CD /* main.m in Sources */,
@@ -550,6 +584,7 @@
 				28637FE31DF92F42008050CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28637FE41DF92F42008050CD /* Build configuration list for PBXNativeTarget "动画Tests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +593,7 @@
 				28637FE61DF92F42008050CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28637FE71DF92F42008050CD /* Build configuration list for PBXNativeTarget "动画UITests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +602,7 @@
 				28637FE91DF92F42008050CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

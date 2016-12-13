@@ -10,6 +10,8 @@
 
 #import "RootVCViewController.h"
 #import "LSLoadingCircle.h"
+#import "LSDashLineLayer.h"
+#import "LSGraintCircleLayer.h"
 
 @interface RootVCViewController ()
 
@@ -20,6 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
+    
+    LSDashLineLayer *dashLine=[[LSDashLineLayer alloc]initWithFrame:CGRectMake(30, 300, 1, 111) color:[UIColor redColor]  lineLength:5 spaceLength:5];
+    [self.view.layer addSublayer:dashLine];
+    
+    [self.view.layer addSublayer:  [[LSGraintCircleLayer alloc]initGraintCircleWithFrame:CGRectMake(30, 230, 100, 100)  FromColor:[UIColor redColor] ToColor:[UIColor blueColor] LineWidth:3]];
 }
 
 - (void)didReceiveMemoryWarning {
