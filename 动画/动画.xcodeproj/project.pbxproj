@@ -21,6 +21,7 @@
 		286380E51DFFF3EB008050CD /* LSGraintCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 286380DF1DFFF3EB008050CD /* LSGraintCircleLayer.m */; };
 		286380E61DFFF3EB008050CD /* LSGraintCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 286380E11DFFF3EB008050CD /* LSGraintCircleView.m */; };
 		286380E71DFFF3EB008050CD /* LSDashLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 286380E41DFFF3EB008050CD /* LSDashLineLayer.m */; };
+		286380EB1DFFF76E008050CD /* LSMultipleColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 286380EA1DFFF76E008050CD /* LSMultipleColorButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		286380E11DFFF3EB008050CD /* LSGraintCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSGraintCircleView.m; sourceTree = "<group>"; };
 		286380E31DFFF3EB008050CD /* LSDashLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDashLineLayer.h; sourceTree = "<group>"; };
 		286380E41DFFF3EB008050CD /* LSDashLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDashLineLayer.m; sourceTree = "<group>"; };
+		286380E91DFFF76E008050CD /* LSMultipleColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMultipleColorButton.h; sourceTree = "<group>"; };
+		286380EA1DFFF76E008050CD /* LSMultipleColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMultipleColorButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		28637FB61DF92F42008050CD /* 动画 */ = {
 			isa = PBXGroup;
 			children = (
+				286380E81DFFF738008050CD /* 带动画圆形按钮 */,
 				286380DD1DFFF3EB008050CD /* 渐变色圆 */,
 				286380E21DFFF3EB008050CD /* 虚线 */,
 				2863803A1DFAC253008050CD /* LSWaveView */,
@@ -200,6 +204,15 @@
 				286380E41DFFF3EB008050CD /* LSDashLineLayer.m */,
 			);
 			path = "虚线";
+			sourceTree = "<group>";
+		};
+		286380E81DFFF738008050CD /* 带动画圆形按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				286380E91DFFF76E008050CD /* LSMultipleColorButton.h */,
+				286380EA1DFFF76E008050CD /* LSMultipleColorButton.m */,
+			);
+			path = "带动画圆形按钮";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +353,7 @@
 			files = (
 				286380E71DFFF3EB008050CD /* LSDashLineLayer.m in Sources */,
 				286380E51DFFF3EB008050CD /* LSGraintCircleLayer.m in Sources */,
+				286380EB1DFFF76E008050CD /* LSMultipleColorButton.m in Sources */,
 				28637FBF1DF92F42008050CD /* ViewController.m in Sources */,
 				28637FF31DFA9FD3008050CD /* RootVCViewController.m in Sources */,
 				286380391DFAC24E008050CD /* LSLoadingCircle.m in Sources */,
